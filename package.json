@@ -1,0 +1,23 @@
+{
+  "name": "npmax",
+  "version": "1.0.0",
+  "description": "A WordPress theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsplawski/npmAX.git"
+  },
+  "author": "Max Splawski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxsplawski/npmAX/issues"
+  },
+  "homepage": "https://github.com/maxsplawski/npmAX#readme",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
