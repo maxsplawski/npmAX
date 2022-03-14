@@ -1,0 +1,48 @@
+.footer {
+  height: 50rem;
+  background-color: $mainBlue;
+  padding: 20rem 0;
+  .grid--footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    .logo__col {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      font-size: 1.4rem;
+
+      .footer__icon {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $mainGrey;
+        font-weight: 600;
+      }
+    }
+
+    .footer__col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 1.4rem;
+
+      .footer__heading {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+.footer__link:link,
+.footer__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $mainGrey;
+  transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: $darkGrey;
+}
