@@ -4,9 +4,9 @@
 
 ?>
 
+    <h1>This is the Homepage</h1>
 
-
-<?php 
+<?php
 
     get_footer();
 
