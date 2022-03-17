@@ -1,3 +1,5 @@
+// LAYOUT
+
 .container {
   /* 1140px */
   max-width: 120rem;
@@ -9,4 +11,75 @@
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+// BUTTONS
+
+.btn,
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: $lightBtnBlue;
+  color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: $darkBtnBlue;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: rgb(247, 247, 247);
+  color: $lightBtnBlue;
+  box-shadow: inset 0 0 0 3px $lightBtnBlue;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: $darkBtnBlue;
+  color: rgb(247, 247, 247);
+  box-shadow: inset 0 0 0 3px $darkBtnBlue;
+}
+
+// TYPOGRAPHY
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+
+  &--primary {
+    font-size: 4.6rem;
+    line-height: 1.05;
+  }
 }

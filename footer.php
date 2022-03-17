@@ -17,9 +17,6 @@
         <div class="footer__col">
 
             <a class="footer__link footer__link--heading">Contact us</a>
-
-            <p class="footer__heading">Contact us</p>
-            <p class="footer__heading">Contact us</p>
             
             <p>Made with ❤️ in Szczecin</p>
             <a class="footer__link" href="">531-480-387</a>
@@ -28,10 +25,6 @@
         <div class="footer__col">
             <a class="footer__link footer__link--heading">About me</a>
 
-            <p class="footer__heading">About me</p>
-
-
-        
             <a class="footer__link" href="">GitHub</a>
             <a class="footer__link" href="">LinkedIn</a>
         </div>
@@ -42,12 +35,6 @@
             <a class="footer__link" href="">Authors</a>
             <a class="footer__link" href="">Archive</a>
             <a class="footer__link" href="">Posts</a>
-
-            <p class="footer__heading">Offer</p>
-            
-            <a class="footer__link" href="">Find products</a>
-            <a class="footer__link" href="">Order</a>
-            <a class="footer__link" href="">Propose a new product</a>
 
         </div>
     </div>
