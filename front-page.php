@@ -30,6 +30,31 @@
           </div>
         </div>
       </section>
+
+      <section class="section__logos">
+          <div class="container">
+          <h2 class="logos__heading">Theme featured in</h2>
+          <div class="logos__container">
+            <img src="<?php echo get_theme_file_uri('/assets/img/logos/techcrunch.png') ?>" alt="Techcrunch logo" />
+            <img
+              src="<?php echo get_theme_file_uri('/assets/img/logos/business-insider.png') ?>"
+              alt="Business Insider logo"
+            />
+            <img
+              src="<?php echo get_theme_file_uri('/assets/img/logos/the-new-york-times.png') ?>"
+              alt="The New York Times logo"
+            />
+            <img src="<?php echo get_theme_file_uri('/assets/img/logos/forbes.png') ?>" alt="Forbes logo" />
+            <img src="<?php echo get_theme_file_uri('/assets/img/logos/usa-today.png') ?>" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section__info">
+          <div class="container">
+
+          </div>
+      </section>
 </main>
 
 
