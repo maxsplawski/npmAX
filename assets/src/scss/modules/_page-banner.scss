@@ -1,0 +1,32 @@
+.page-banner__section {
+  padding: 2.4rem 0;
+
+  .page-banner__title {
+    margin-bottom: 2rem;
+  }
+
+  .page-banner__intro {
+    margin-bottom: 1.6rem;
+    font-size: 3rem;
+  }
+
+  .page-banner__linksContainer {
+    display: flex;
+
+    .page-banner__homeLink {
+      background-color: $darkBtnBlue;
+      text-decoration: none;
+    }
+
+    .page-banner__secondaryLink {
+      background-color: $lightBtnBlue;
+    }
+
+    .page-banner__link {
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem;
+      border-radius: 9px;
+      color: rgb(247, 247, 247);
+    }
+  }
+}
