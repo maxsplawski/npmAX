@@ -51,10 +51,72 @@
       </section>
 
       <section class="section__info">
-          <div class="container">
+          <div class="headings__container container">
+              <span class="info__subheading subheading">News</span>
+              <h2 class="info__heading heading heading--secondary">See what's happening</h2>
+          </div>
+          <div class="container grid grid--2-cols">
+              <div class="events__container">
+                <h3 class="event__heading heading heading--3">Upcoming Events</h3>
 
+                <div class="event-summary">
+                    <a class="event-summary__date event-link" href="#">
+                    <span class="event-summary__month">Mar</span>
+                    <span class="event-summary__day">25</span>
+                    </a>
+                    <div class="event-summary__content">
+                        <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Poetry in the 100</a></h5>
+                        <p class="event-summary__text">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="event-summary__link">Learn more</a></p>
+                    </div>
+                </div>
+
+                <div class="event-summary">
+                    <a class="event-summary__date event-link" href="#">
+                    <span class="event-summary__month">Apr</span>
+                    <span class="event-summary__day">02</span>
+                    </a>
+                    <div class="event-summary__content">
+                        <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Quad Picnic Party</a></h5>
+                        <p class="event-summary__text">Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="event-summary__link">Learn more</a></p>
+                    </div>
+                </div>
+
+               <p><a href="#" class="btn btn--primary">View All Events</a></p>
+              </div>
+
+            <div class="events__container">
+                <h3 class="event__heading heading heading--3">Recent blog posts</h3>
+                <div class="event-summary">
+                    <a class="event-summary__date event-link" href="#">
+                    <span class="event-summary__month">Mar</span>
+                    <span class="event-summary__day">25</span>
+                    </a>
+                    <div class="event-summary__content">
+                    <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Poetry in the 100</a></h5>
+                    <p class="event-summary__text">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="event-summary__link">Learn more</a></p>
+                    </div>
+                </div>
+
+                <div class="event-summary">
+                    <a class="event-summary__date event-link" href="#">
+                    <span class="event-summary__month">Apr</span>
+                    <span class="event-summary__day">02</span>
+                    </a>
+                    <div class="event-summary__content">
+                    <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Quad Picnic Party</a></h5>
+                    <p class="event-summary__text">Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="event-summary__link">Learn more</a></p>
+                    </div>
+                </div>
+
+                <p><a href="#" class="btn btn--primary">View All Blog Posts</a></p>
+            </div>
+            
+            </div>
           </div>
       </section>
+
+      
+
 </main>
 
 
