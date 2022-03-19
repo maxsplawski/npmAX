@@ -1,6 +1,6 @@
 // @import "~bootstrap/scss/bootstrap";
-@import "./reset";
 @import "base/variables";
+@import "./reset";
 @import "base/utility-classes";
 @import "modules/header";
 @import "modules/hero";
@@ -8,5 +8,6 @@
 @import "modules/info";
 @import "modules/footer";
 @import "modules/page-banner";
+@import "modules/page";
 @import "modules/generic-content";
 @import "base/baseline";

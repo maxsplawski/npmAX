@@ -11,7 +11,7 @@
     <section class="section__page-banner">
         <div class="container">
             <div class="page-banner__content">
-                <h1 class="page-banner__title heading heading--primary">Theme's history</h1>
+                <h1 class="page-banner__title heading heading--primary"><?php the_title(); ?></h1>
                 <div class="page-banner__intro">
                 <p>Learn how this theme got started.</p>
                 </div>
@@ -28,17 +28,18 @@
 
         <section class="section__page">
             <div class="container">
-                <div class="page-links">
-                    <h2 class="page-links__title"><a class="link" href="#">About Us</a></h2>
-                    <ul class="min-list">
-                    <li class="current_page_item"><a class="link" href="#">Our History</a></li>
+                <!-- <div class="page-links">
+                    <h2 class="page-links__title"><a class="link" href="#"><?php the_title(); ?></a></h2>
+                    <ul class="page-links__list">
+                    <li class="current-page-item"><a class="link" href="#">Our History</a></li>
                     <li><a class="link" href="#">Our Goals</a></li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="generic-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptates vero vel temporibus aliquid possimus, facere accusamus modi. Fugit saepe et autem, laboriosam earum reprehenderit illum odit nobis, consectetur dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestiae, tempora alias atque vero officiis sit commodi ipsa vitae impedit odio repellendus doloremque quibusdam quo, ea veniam, ad quod sed.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptates vero vel temporibus aliquid possimus, facere accusamus modi. Fugit saepe et autem, laboriosam earum reprehenderit illum odit nobis, consectetur dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestiae, tempora alias atque vero officiis sit commodi ipsa vitae impedit odio repellendus doloremque quibusdam quo, ea veniam, ad quod sed.</p>
+                    <?php 
+                        the_content();
+                    ?>
                 </div>
             </div>
         </section>

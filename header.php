@@ -9,14 +9,14 @@
 </head>
 <body <?php body_class(); ?>>
     <header class="header">
-      <a href="#" class="header__icon">
+      <a href="<?php echo site_url() ?>" class="header__icon">
         LOGO
         <!-- <img src="" alt="Icon image"> -->
       </a>
       <nav class="nav">
       <ul class="nav__list">
-        <li><a class="nav__listLink" href="">About</a></li>
-        <li><a class="nav__listLink" href="">Offer</a></li>
+        <li><a class="nav__listLink" href="<?php echo site_url('/about-me') ?>">About</a></li>
+        <li><a class="nav__listLink" href="<?php echo site_url('/privacy-policy') ?>">Privacy</a></li>
         <li><a class="nav__listLink" href="">Career</a></li>
         <li><a class="nav__listLink" href="">Contact</a></li>
       </ul>

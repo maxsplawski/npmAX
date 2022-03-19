@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container grid grid--footer">
         <div class="logo__col">
-            <a href="#" class="footer__icon">
+            <a href="<?php echo site_url() ?>" class="footer__icon">
                 LOGO
                 <!-- <img src="" alt="Icon image"> -->
             </a>
@@ -23,7 +23,7 @@
             <a class="footer__link" href="">maxsplawski@gmail.com</a>
         </div>
         <div class="footer__col">
-            <a class="footer__link footer__link--heading">About me</a>
+            <a class="footer__link footer__link--heading" href="<?php echo site_url('/about-me') ?>">About me</a>
 
             <a class="footer__link" href="">GitHub</a>
             <a class="footer__link" href="">LinkedIn</a>
