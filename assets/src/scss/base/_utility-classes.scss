@@ -104,3 +104,14 @@
   font-size: 2.4rem;
   font-weight: 500;
 }
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: $mainGrey;
+}
+
+.link:hover,
+.link:active {
+  color: $darkGrey;
+}
