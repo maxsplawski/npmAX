@@ -106,6 +106,7 @@
 .link:visited {
   text-decoration: none;
   color: $mainGrey;
+  transition: 0.3s all;
 }
 
 .link:hover,

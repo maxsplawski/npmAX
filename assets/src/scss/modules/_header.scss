@@ -19,11 +19,15 @@
       list-style: none;
       gap: 3.2rem;
 
+      .current_menu_item {
+        color: $darkGrey;
+      }
+
       &Link:link,
       &Link:visited {
         display: inline-block;
         text-decoration: none;
-        color: $mainGrey;
+        color: inherit;
         font-size: 2rem;
         transition: all 0.3s;
       }

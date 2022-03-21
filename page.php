@@ -45,7 +45,7 @@
                     
                 ?>
                 <div class="page-links">
-                    <h2 class="page-links__title"><a class="link" href="<?php get_permalink($parentID) ?>"><?php echo get_the_title($parentID); ?></a></h2>
+                    <h2 class="page-links__title"><a class="link" href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID); ?></a></h2>
                     <ul class="page-links__list">
                     <?php
                         if($parentID) {

@@ -32,13 +32,13 @@
         }
       }
 
-      .current-page-item {
+      .current_page_item {
         a {
           color: $mainWhite;
         }
 
         a:hover {
-          color: $mainWhite;
+          color: $darkWhite;
         }
       }
     }

@@ -1,0 +1,35 @@
+.section__blog {
+  padding: 2.4rem 0 9.6rem 0;
+
+  .post-item {
+    margin-bottom: 7.8rem;
+    width: 70%;
+
+    &__heading {
+      margin-bottom: 1rem;
+    }
+
+    &__author {
+      padding: 1rem 1.5rem;
+      background-color: $lightBtnBlue;
+      border-radius: 9px;
+      width: max-content;
+      margin-bottom: 3rem;
+
+      p {
+        color: $mainWhite;
+        font-size: 1.6rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: $darkWhite--02;
+        transition: 0.3s all;
+      }
+
+      a:hover {
+        color: $mainGrey;
+      }
+    }
+  }
+}
