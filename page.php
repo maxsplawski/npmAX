@@ -17,24 +17,51 @@
                 </div>
             </div>
             
+            <?php
+                $parentID = wp_get_post_parent_id(get_the_ID());
+                if($parentID) {
+                    
+            ?>
+                    <div class="page-banner__links">
+                        <div class="page-banner__linksContainer">
+                        <a class="page-banner__homeLink page-banner__link" href="<?php the_permalink($parentID); ?>">Back to <?php echo get_the_title($parentID); ?></a> <span class="page-banner__secondaryLink page-banner__link"><?php the_title(); ?></span>
+                        </div>
+                    </div>
 
-            <div class="page-banner__links">
-                <div class="page-banner__linksContainer">
-                <a class="page-banner__homeLink page-banner__link" href="#">Back to About me</a> <span class="page-banner__secondaryLink page-banner__link">Our History</span>
-                </div>
-            </div>
+                <?php };
+            ?>
+
             </div>
         </section>
 
         <section class="section__page">
             <div class="container">
-                <!-- <div class="page-links">
-                    <h2 class="page-links__title"><a class="link" href="#"><?php the_title(); ?></a></h2>
+                <?php 
+                    $testArray = get_pages(array(
+                        'child_of' => get_the_ID()
+                    ));
+                    
+                    if($parentID or $testArray) { 
+                    
+                ?>
+                <div class="page-links">
+                    <h2 class="page-links__title"><a class="link" href="<?php get_permalink($parentID) ?>"><?php echo get_the_title($parentID); ?></a></h2>
                     <ul class="page-links__list">
-                    <li class="current-page-item"><a class="link" href="#">Our History</a></li>
-                    <li><a class="link" href="#">Our Goals</a></li>
+                    <?php
+                        if($parentID) {
+                            $findChildrenOf = $parentID;
+                        } else {
+                            $findChildrenOf = get_the_ID();
+                        }
+
+                        wp_list_pages(array(
+                            'title_li' => NULL,
+                            'child_of' => $findChildrenOf,
+                        ));
+                    ?>
                     </ul>
-                </div> -->
+                </div>
+                <?php } ?>
 
                 <div class="generic-content">
                     <?php 
