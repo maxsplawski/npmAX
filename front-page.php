@@ -86,6 +86,8 @@
 
             <div class="events__container">
                 <h3 class="event__heading heading heading--3">Recent blog posts</h3>
+
+                
                 <div class="event-summary">
                     <a class="event-summary__date event-link" href="#">
                     <span class="event-summary__month">Mar</span>
