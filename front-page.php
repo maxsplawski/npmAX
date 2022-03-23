@@ -58,59 +58,63 @@
           <div class="container grid grid--2-cols">
               <div class="events__container">
                 <h3 class="event__heading heading heading--3">Upcoming Events</h3>
+                <?php
+                  $homepageEvents = new WP_Query(array(
+                    'posts_per_page' => 2,
+                    'post_type' => 'event'
+                  ));
+
+                  while($homepageEvents->have_posts()) {
+                    $homepageEvents->the_post();
+                ?>
 
                 <div class="event-summary">
-                    <a class="event-summary__date event-link" href="#">
+                    <a class="event-summary__date event-link" href="<?php the_permalink(); ?>">
                     <span class="event-summary__month">Mar</span>
                     <span class="event-summary__day">25</span>
                     </a>
                     <div class="event-summary__content">
-                        <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Poetry in the 100</a></h5>
-                        <p class="event-summary__text">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="event-summary__link">Learn more</a></p>
+                        <h5 class="event-summary__title heading heading--5"><a class="event-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                        <p class="event-summary__text"><?php echo wp_trim_words(get_the_content(), 18) ?><a href="<?php the_permalink(); ?>" class="event-summary__link">Learn more</a></p>
                     </div>
                 </div>
 
-                <div class="event-summary">
-                    <a class="event-summary__date event-link" href="#">
-                    <span class="event-summary__month">Apr</span>
-                    <span class="event-summary__day">02</span>
-                    </a>
-                    <div class="event-summary__content">
-                        <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Quad Picnic Party</a></h5>
-                        <p class="event-summary__text">Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="event-summary__link">Learn more</a></p>
-                    </div>
-                </div>
+              <?php
+                  }
+              ?>
 
-               <p><a href="#" class="btn btn--primary">View All Events</a></p>
+              <p><a href="#" class="btn btn--primary">View All Events</a></p>
+              
               </div>
 
             <div class="events__container">
                 <h3 class="event__heading heading heading--3">Recent blog posts</h3>
+                <?php
+                  $homepagePosts = new WP_Query(array(
+                    'posts_per_page' => 2,
+                    
+                  ));
 
-                
-                <div class="event-summary">
-                    <a class="event-summary__date event-link" href="#">
-                    <span class="event-summary__month">Mar</span>
-                    <span class="event-summary__day">25</span>
-                    </a>
-                    <div class="event-summary__content">
-                    <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Poetry in the 100</a></h5>
-                    <p class="event-summary__text">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="event-summary__link">Learn more</a></p>
-                    </div>
-                </div>
+                  while($homepagePosts->have_posts()) {
+                    $homepagePosts->the_post();
+                   ?>
 
                 <div class="event-summary">
-                    <a class="event-summary__date event-link" href="#">
-                    <span class="event-summary__month">Apr</span>
-                    <span class="event-summary__day">02</span>
+                    <a class="event-summary__date event-link" href="<?php the_permalink(); ?>">
+                    <span class="event-summary__month"><?php the_time('M'); ?></span>
+                    <span class="event-summary__day"><?php the_time('d'); ?></span>
                     </a>
                     <div class="event-summary__content">
-                    <h5 class="event-summary__title heading heading--5"><a class="event-link" href="#">Quad Picnic Party</a></h5>
-                    <p class="event-summary__text">Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="event-summary__link">Learn more</a></p>
+                    <h5 class="event-summary__title heading heading--5"><a class="event-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <p class="event-summary__text"><?php echo wp_trim_words(get_the_content(), 18); ?>
+                  </br>
+                  <a href="<?php the_permalink(); ?>" class="event-summary__link">Read more</a></p>
                     </div>
-                </div>
+                </div> <?php } wp_reset_postdata();
 
-                <p><a href="#" class="btn btn--primary">View All Blog Posts</a></p>
+                ?>
+
+                <p><a href="<?php echo site_url('/blog'); ?>" class="btn btn--primary">View All Blog Posts</a></p>
             </div>
             
             </div>
