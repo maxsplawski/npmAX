@@ -20,6 +20,16 @@
 
     .page-banner__secondaryLink {
       background-color: $lightBtnBlue;
+
+      a {
+        text-decoration: none;
+        color: $darkWhite--03;
+        transition: 0.3s all;
+      }
+
+      a:hover {
+        color: $mainGrey;
+      }
     }
 
     .page-banner__link {
